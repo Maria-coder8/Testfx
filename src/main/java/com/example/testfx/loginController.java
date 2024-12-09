@@ -33,6 +33,8 @@ public class loginController {
     }
     @FXML
     private void signIn() throws IOException{
+
+        
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
