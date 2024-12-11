@@ -13,8 +13,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
-
-
 public class loginController {
     @FXML
     private PasswordField password;
@@ -34,11 +32,10 @@ public class loginController {
     @FXML
     private void signIn() throws IOException{
 
-        
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            FXMLLoader fxmlloader = new FXMLLoader(loginController.class.getResource("Main.fxml"));
+            FXMLLoader fxmlloader = new FXMLLoader(loginController.class.getResource("MoviePage.fxml"));
             Scene scene = new Scene(fxmlloader.load());
             Main.stage.setScene(scene);
             Main.stage.show();
@@ -52,7 +49,4 @@ public class loginController {
         Main.stage.setScene(scene);
         Main.stage.show();
     }
-
-
-
 }

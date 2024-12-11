@@ -10,15 +10,16 @@ import java.io.IOException;
 import java.util.Objects;
 public class Step3Controller {
     @FXML
-    protected void Done() throws IOException{
+    protected void Done() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Step3Controller.class.getResource("Payment.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Main.stage.setScene(scene);
         Main.stage.show();
 
     }
+
     @FXML
-    protected void BacktoStep2() throws IOException{
+    protected void BacktoStep2() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Step3Controller.class.getResource("Step2.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Main.stage.setScene(scene);

@@ -21,22 +21,22 @@
                         <Image url="@images/logo.watchit.png" />
                     </image>
                 </ImageView>
-                <Button layoutX="22.0" layoutY="196.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" text="Home" textFill="WHITE">
+                <Button layoutX="22.0" layoutY="196.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" text="Home" textFill="WHITE">
                     <font>
                         <Font name="Arial Bold" size="18.0" />
                     </font>
                 </Button>
-                <Button layoutX="22.0" layoutY="290.0" mnemonicParsing="false" onAction="#Watched" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50; -fx-font-family: arial; -fx-font-weight: bold;" text="Watched" textFill="WHITE">
+                <Button layoutX="22.0" layoutY="290.0" mnemonicParsing="false" onAction="#goToWatched" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50; -fx-font-family: arial; -fx-font-weight: bold;" text="Watched" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </Button>
-                <Button layoutX="22.0" layoutY="378.0" mnemonicParsing="false" onAction="#MovieList" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50; -fx-font-family: arial; -fx-font-weight: bold;" text="My List" textFill="WHITE">
+                <Button layoutX="22.0" layoutY="378.0" mnemonicParsing="false" onAction="#goToMovieList" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50; -fx-font-family: arial; -fx-font-weight: bold;" text="My List" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </Button>
-                <Button layoutX="22.0" layoutY="457.0" mnemonicParsing="false" onAction="#Favourites" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50; -fx-font-family: arial; -fx-font-weight: bold;" text="Favourites" textFill="WHITE">
+                <Button layoutX="22.0" layoutY="457.0" mnemonicParsing="false" onAction="#goToFavourites" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50; -fx-font-family: arial; -fx-font-weight: bold;" text="Favourites" textFill="WHITE">
                     <font>
                         <Font size="18.0" />
                     </font>

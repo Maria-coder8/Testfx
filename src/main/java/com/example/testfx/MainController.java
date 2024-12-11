@@ -18,22 +18,29 @@ public class MainController {
     @FXML
     private ImageView imageButton;
     @FXML
-    protected void Watched() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("WatchedMovies.fxml"));
+    protected void goToWatched() throws IOException{
+        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("watchedMovies.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Main.stage.setScene(scene);
         Main.stage.show();
     }
     @FXML
-    protected void MovieList() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("MyList.fxml"));
+    protected void goToHome() throws IOException{
+        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("MoviePage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Main.stage.setScene(scene);
         Main.stage.show();
     }
     @FXML
-    protected void Favourites() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("Favourites.fxml"));
+    protected void goToMovieList() throws IOException{
+        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("yourListMovies.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
+    }
+    @FXML
+    protected void goToFavourites() throws IOException{
+        FXMLLoader fxmlLoader=new FXMLLoader(MainController.class.getResource("favouriteMovies.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Main.stage.setScene(scene);
         Main.stage.show();
