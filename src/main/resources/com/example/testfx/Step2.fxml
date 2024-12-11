@@ -69,7 +69,7 @@
       </RadioButton>
       <VBox layoutX="149.0" layoutY="333.0" prefHeight="243.0" prefWidth="260.0" style="-fx-background-color: #1d1814; -fx-background-radius: 20; -fx-border-color: #bb8f00; -fx-border-radius: 20; -fx-border-width: 2;">
          <children>
-            <Label prefHeight="50.0" prefWidth="129.0" style="-fx-font-family: Arial; -fx-font-size: 28; -fx-font-weight: Bold; -fx-text-fill: #fffff; -fx-text-alignment: Left;" text="5 Movies" textAlignment="CENTER" textFill="WHITE">
+            <Label prefHeight="50.0" prefWidth="129.0" style="-fx-font-family: Arial; -fx-font-size: 28; -fx-font-weight: Bold; -fx-text-fill: fffff; -fx-text-alignment: Left;" text="5 Movies" textAlignment="CENTER" textFill="WHITE">
                <padding>
                   <Insets top="2.0" />
                </padding>
@@ -77,12 +77,12 @@
                   <Insets left="15.0" right="2.0" top="2.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-text-fill: #ffffff; -fx-font-family: Arial; -fx-font-size: 18;" text="/Per Month">
+            <Label style="-fx-text-fill: ffffff; -fx-font-family: Arial; -fx-font-size: 18;" text="/Per Month">
                <VBox.margin>
                   <Insets left="145.0" top="-31.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-font-family: arial; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: #ffffff;" text="100 EGP">
+            <Label style="-fx-font-family: arial; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: ffffff;" text="100 EGP">
                <VBox.margin>
                   <Insets left="120.0" top="100.0" />
                </VBox.margin>
@@ -91,7 +91,7 @@
       </VBox>
       <VBox layoutX="523.0" layoutY="331.0" prefHeight="243.0" prefWidth="259.0" style="-fx-background-color: #1d1814; -fx-background-radius: 20; -fx-border-color: #bb8f00; -fx-border-radius: 20; -fx-border-width: 2;">
          <children>
-            <Label prefHeight="50.0" prefWidth="147.0" style="-fx-font-family: Arial; -fx-font-size: 28; -fx-font-weight: Bold; -fx-text-fill: #fffff; -fx-text-alignment: Left;" text="10 Movies" textAlignment="CENTER" textFill="WHITE">
+            <Label prefHeight="50.0" prefWidth="147.0" style="-fx-font-family: Arial; -fx-font-size: 28; -fx-font-weight: Bold; -fx-text-fill: fffff; -fx-text-alignment: Left;" text="10 Movies" textAlignment="CENTER" textFill="WHITE">
                <padding>
                   <Insets top="2.0" />
                </padding>
@@ -104,7 +104,7 @@
                   <Insets left="160.0" top="-31.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-font-family: arial; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: #ffffff;" text="200 EGP">
+            <Label style="-fx-font-family: arial; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: ffffff;" text="200 EGP">
                <VBox.margin>
                   <Insets left="120.0" top="100.0" />
                </VBox.margin>
@@ -113,7 +113,7 @@
       </VBox>
       <VBox layoutX="905.0" layoutY="327.0" prefHeight="243.0" prefWidth="254.0" style="-fx-background-color: #1d1814; -fx-background-radius: 20; -fx-border-color: #bb8f00; -fx-border-radius: 20; -fx-border-width: 2;">
          <children>
-            <Label prefHeight="50.0" prefWidth="142.0" style="-fx-font-family: Arial; -fx-font-size: 28; -fx-font-weight: Bold; -fx-text-fill: #fffff; -fx-text-alignment: Left;" text="30 Movies" textAlignment="CENTER" textFill="WHITE">
+            <Label prefHeight="50.0" prefWidth="142.0" style="-fx-font-family: Arial; -fx-font-size: 28; -fx-font-weight: Bold; -fx-text-fill: fffff; -fx-text-alignment: Left;" text="30 Movies" textAlignment="CENTER" textFill="WHITE">
                <padding>
                   <Insets top="2.0" />
                </padding>
@@ -121,12 +121,12 @@
                   <Insets left="15.0" right="2.0" top="2.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-text-fill: #ffffff; -fx-font-family: Arial; -fx-font-size: 18;" text="/Per Month">
+            <Label style="-fx-text-fill: ffffff; -fx-font-family: Arial; -fx-font-size: 18;" text="/Per Month">
                <VBox.margin>
                   <Insets left="155.0" top="-31.0" />
                </VBox.margin>
             </Label>
-            <Label style="-fx-font-family: arial; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: #ffffff;" text="300 EGP">
+            <Label style="-fx-font-family: arial; -fx-font-size: 30; -fx-font-weight: bold; -fx-text-fill: ffffff;" text="300 EGP">
                <VBox.margin>
                   <Insets left="120.0" top="100.0" />
                </VBox.margin>
