@@ -1,14 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.testfx.Main"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #090909;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx.MainController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #000;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="200.0" layoutY="7.0">
+               <image>
+                  <Image url="@images/logo.watchit.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="22.0" layoutY="196.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="286.0" mnemonicParsing="false" onAction="#Watched" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" text="Watched" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="378.0" mnemonicParsing="false" onAction="#MovieList" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" text="My List" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="457.0" mnemonicParsing="false" onAction="#Favourites" prefHeight="20.0" prefWidth="157.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" text="Favourites" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" prefHeight="53.0" prefWidth="1137.0" style="-fx-background-color: #000;">
+         <children>
+            <TextField layoutX="930.0" layoutY="9.0" prefHeight="35.0" prefWidth="184.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" />
+         </children></AnchorPane>
+      <Label layoutX="208.0" layoutY="53.0" prefHeight="39.0" prefWidth="147.0" text="Recommended" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ScrollBar fx:id="scrollBar" layoutX="200.0" layoutY="270.0" prefHeight="14.0" prefWidth="1137.0" style="-fx-background-color: #444441;" />
+      <GridPane layoutX="208.0" layoutY="92.0" prefHeight="163.0" prefWidth="1111.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="208.0" layoutY="294.0" prefHeight="39.0" prefWidth="147.0" text="Top Rated" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ScrollBar layoutX="200.0" layoutY="505.0" prefHeight="14.0" prefWidth="1137.0" style="-fx-background-color: #444441;" />
+      <Label layoutX="208.0" layoutY="512.0" prefHeight="39.0" prefWidth="147.0" text="New Movies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="200.0" layoutY="346.0" prefHeight="120.0" prefWidth="1111.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="173.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="177.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="260.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="147.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="144.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="151.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="166.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView  fitHeight="157.0" fitWidth="162.0" onMousePressed="#SwitchStage">
+               <image>
+                  <Image url="@images/images/shawshankredemption.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="157.0" fitWidth="166.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@images/images/thedarkknight.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="154.0" fitWidth="140.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@images/images/thegodfather.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="159.0" fitWidth="137.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@images/images/pulpfiction.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="159.0" fitWidth="134.0" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@images/images/lordoftherings.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="159.0" fitWidth="133.0" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@images/images/schindler'slist.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="158.0" fitWidth="137.0" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@images/images/forrestgump.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane layoutX="200.0" layoutY="559.0" prefHeight="120.0" prefWidth="1111.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="167.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="175.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="163.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="155.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="155.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="143.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="152.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="154.0" fitWidth="160.0">
+               <image>
+                  <Image url="@images/images/blackpanther.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="160.0" fitWidth="163.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@images/images/coco.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="158.0" fitWidth="149.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@images/images/bladerunner2049.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="160.0" fitWidth="144.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@images/images/lalaland.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="160.0" fitWidth="142.0" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@images/images/insideout.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="160.0" fitWidth="135.0" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@images/images/wicked.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="159.0" fitWidth="133.0" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@images/images/venom3.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
 </AnchorPane>
