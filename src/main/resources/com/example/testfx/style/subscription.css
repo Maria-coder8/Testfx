@@ -1,0 +1,17 @@
+.toggle-button {
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-background-color: #333;
+}
+
+.toggle-button:selected {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.hbox {
+    -fx-background-color: #000;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-radius: 20;
+}
