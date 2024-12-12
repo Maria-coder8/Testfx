@@ -26,20 +26,15 @@ public class RegisterController {
       boolean isInvalidEmail=ValideInformation.VallidateEmailField(email);
       boolean isInvalidPassword=ValideInformation.VallidatePasswordField(password);
       if (!isFirstEmpty &&!isLastEmpty&&!isEmailEmpty&&!isPasswordEmpty &&!isInvalidEmail && !isInvalidPassword) {
-          FXMLLoader fxmlLoader=new FXMLLoader(RegisterController.class.getResource("Step2.fxml"));
-          Scene scene = new Scene(fxmlLoader.load());
-          Main.stage.setScene(scene);
-          Main.stage.show();
+          SwitchScene.switchScene("Step2.fxml");
       }
 
 
     }
     @FXML
     protected void Back() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(RegisterController.class.getResource("login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Main.stage.setScene(scene);
-        Main.stage.show();
+    SwitchScene.switchScene("login.fxml");
+
     }
 
 }

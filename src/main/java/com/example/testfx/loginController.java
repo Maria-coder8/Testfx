@@ -24,10 +24,7 @@ public class loginController {
     private Text error;
     @FXML
     protected void resetPassword() throws IOException {
-        FXMLLoader fxmlloader= new FXMLLoader(loginController.class.getResource("resetpassword.fxml"));
-        Scene scene =new Scene(fxmlloader.load());
-        Main.stage.setScene(scene);
-        Main.stage.show();
+        SwitchScene.switchScene("resetpassword.fxml");
     }
     @FXML
     private void signIn() throws IOException{
