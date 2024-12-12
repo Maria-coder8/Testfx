@@ -10,18 +10,12 @@ public class PaymentController {
 
     @FXML
     protected void toMain() throws IOException {
-        FXMLLoader fxmlLoader=new FXMLLoader(PaymentController.class.getResource("MoviePage.fxml"));
-        Scene scene=new Scene(fxmlLoader.load());
-        Main.stage.setScene(scene);
-        Main.stage.show();
+        SwitchScene.switchScene("MoviePage.fxml");
     }
 
     @FXML
     protected void BackToStep3() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(PaymentController.class.getResource("Step3.fxml"));
-        Scene scene=new Scene(fxmlLoader.load());
-        Main.stage.setScene(scene);
-        Main.stage.show();
+        SwitchScene.switchScene("Step3.fxml");
     }
 
 }

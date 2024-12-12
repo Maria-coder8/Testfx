@@ -11,70 +11,62 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx.loginController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #0f0a05;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx.loginController">
    <children>
       <VBox layoutY="7.0" prefHeight="50.0" prefWidth="210.0">
          <children>
-            <VBox prefHeight="61.0" prefWidth="208.0">
-               <children>
-                  <ImageView fitHeight="35.0" fitWidth="200.0">
-                     <image>
-                        <Image url="@images/logo.watchit.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </VBox>
+            <VBox prefHeight="61.0" prefWidth="208.0" />
          </children>
       </VBox>
-      <TextField fx:id="emailOrMobileNumber" layoutX="262.0" layoutY="261.0" prefHeight="44.0" prefWidth="364.0" promptText="Email or mobile number" style="-fx-background-color: #444441;">
+      <TextField fx:id="emailOrMobileNumber" layoutX="460.0" layoutY="268.0" prefHeight="44.0" prefWidth="364.0" promptText="Email or mobile number" style="-fx-background-color: #444441;">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="password" layoutX="262.0" layoutY="371.0" prefHeight="44.0" prefWidth="364.0" promptText="Password" style="-fx-background-color: #444441;">
+      <PasswordField fx:id="password" layoutX="460.0" layoutY="367.0" prefHeight="44.0" prefWidth="364.0" promptText="Password" style="-fx-background-color: #444441;">
          <font>
             <Font size="18.0" />
          </font>
       </PasswordField>
-      <Label layoutX="265.0" layoutY="213.0" prefHeight="36.0" prefWidth="227.0" text="Email or mobile number" textFill="#f8f8f8">
+      <Label layoutX="461.0" layoutY="231.0" prefHeight="36.0" prefWidth="227.0" text="Email or mobile number" textFill="#f8f8f8">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="324.0" prefHeight="36.0" prefWidth="227.0" text="Password" textFill="WHITE">
+      <Label layoutX="460.0" layoutY="333.0" prefHeight="36.0" prefWidth="227.0" text="Password" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="272.0" layoutY="111.0" prefHeight="64.0" prefWidth="152.0" text="Sign in" textFill="WHITE">
+      <Label layoutX="569.0" layoutY="140.0" prefHeight="64.0" prefWidth="152.0" text="Sign in" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="43.0" />
+            <Font name="Arial Bold" size="44.0" />
          </font>
       </Label>
-      <Hyperlink layoutX="508.0" layoutY="415.0" onAction="#resetPassword" prefHeight="36.0" prefWidth="133.0" text="Reset Password?" textFill="#fffefe">
+      <Hyperlink layoutX="702.0" layoutY="414.0" onAction="#resetPassword" prefHeight="36.0" prefWidth="133.0" text="Reset Password?" textFill="#fffefe">
          <font>
             <Font size="16.0" />
          </font>
       </Hyperlink>
-      <Button layoutX="1144.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="122.0" style="-fx-background-color: #444441;" text="العربية" textFill="WHITE">
+      <Button fx:id="signInButton" layoutX="337.0" layoutY="475.0" mnemonicParsing="false" onAction="#signIn" prefHeight="36.0" prefWidth="610.0" style="-fx-background-color: #bb8f00;" text="Sign in">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="Arial Bold" size="22.0" />
          </font>
       </Button>
-      <Button fx:id="signInButton" layoutX="256.0" layoutY="475.0" mnemonicParsing="false" onAction="#signIn" prefHeight="36.0" prefWidth="610.0" style="-fx-background-color: #bb8f00;" text="Sign in">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </Button>
-      <Button layoutX="601.0" layoutY="533.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: #000000;" text="Sign up" textFill="#bb8f00">
+      <Button layoutX="679.0" layoutY="520.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: #000000;" text="Sign up" textFill="#bb8f00">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Label layoutX="435.0" layoutY="536.0" prefHeight="26.0" prefWidth="183.0" text="Don't have an account?" textFill="WHITE">
+      <Label layoutX="500.0" layoutY="523.0" prefHeight="26.0" prefWidth="183.0" text="Don't have an account?" textFill="WHITE">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
+      <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="8.0" layoutY="6.0">
+         <image>
+            <Image url="@images/logo.watchit.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

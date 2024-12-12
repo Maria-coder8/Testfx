@@ -10,10 +10,7 @@ import java.io.IOException;
 public class Step2Controller {
     @FXML
     protected void payment() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(Step2Controller.class.getResource("Step3.fxml"));
-        Scene scene=new Scene(fxmlLoader.load());
-        Main.stage.setScene(scene);
-        Main.stage.show();
+        SwitchScene.switchScene("Step3.fxml");
 
     }
 
@@ -23,8 +20,6 @@ public class Step2Controller {
     private ToggleButton btnPremium;
     @FXML
     private ToggleButton btnTelecom;
-
-
 
     @FXML
     protected void BacktoStep1() throws IOException{

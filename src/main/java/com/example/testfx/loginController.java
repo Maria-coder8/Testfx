@@ -35,18 +35,12 @@ public class loginController {
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            FXMLLoader fxmlloader = new FXMLLoader(loginController.class.getResource("MoviePage.fxml"));
-            Scene scene = new Scene(fxmlloader.load());
-            Main.stage.setScene(scene);
-            Main.stage.show();
+            SwitchScene.switchScene("MoviePage.fxml");
         }
     }
 
     @FXML
     protected void signUpButton() throws IOException{
-        FXMLLoader fxmlLoader=new FXMLLoader(loginController.class.getResource("Register.fxml"));
-        Scene scene=new Scene(fxmlLoader.load());
-        Main.stage.setScene(scene);
-        Main.stage.show();
+        SwitchScene.switchScene("Register.fxml");
     }
 }

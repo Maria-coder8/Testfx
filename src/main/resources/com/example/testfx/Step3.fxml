@@ -49,26 +49,20 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <RadioButton layoutX="531.0" layoutY="442.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="244.0" style="-fx-background-color: #444441; -fx-background-radius: 80; -fx-border-color: #bb8f00; -fx-border-radius: 80; -fx-border-width: 2; -fx-font-family: arial;" text="Instapay" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="17.0" />
-         </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="paymentgroup1" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton layoutX="533.0" layoutY="370.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="244.0" style="-fx-background-color: #444441; -fx-background-radius: 80; -fx-border-color: #bb8f00; -fx-border-radius: 80; -fx-border-width: 2; -fx-font-family: arial;" text="Fawry" textAlignment="CENTER" textFill="WHITE">
-         <font>
-            <Font size="17.0" />
-         </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="paymentgroup2" />
-         </toggleGroup>
-      </RadioButton>
       <Label layoutX="453.0" layoutY="187.0" prefHeight="36.0" prefWidth="401.0" style="-fx-text-fill: #666666;" text="Choose your preferred secure payment methods." textFill="#f8f8f8">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Label>
+      <RadioButton layoutX="532.0" layoutY="470.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="244.0" style="-fx-background-color: #444441; -fx-background-radius: 80; -fx-border-color: #bb8f00; -fx-border-radius: 80; -fx-border-width: 2; -fx-font-family: arial;" text="Instapay" textAlignment="CENTER" textFill="WHITE" toggleGroup="$paymentgroup">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="532.0" layoutY="380.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="244.0" style="-fx-background-color: #444441; -fx-background-radius: 80; -fx-border-color: #bb8f00; -fx-border-radius: 80; -fx-border-width: 2; -fx-font-family: arial;" text="Fawry" textAlignment="CENTER" textFill="WHITE" toggleGroup="$paymentgroup">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </RadioButton>
    </children>
 </AnchorPane>
