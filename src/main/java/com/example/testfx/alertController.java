@@ -1,4 +1,5 @@
 package com.example.testfx;
+import eu.hansolo.tilesfx.addons.Switch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -43,6 +44,6 @@ public class alertController {
         Scene scene = new Scene(layout);
         stage.setScene(scene);
         stage.showAndWait();
-        if(s)stage.close();
+//        if(s)stage.close();
     }
 }
