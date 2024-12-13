@@ -8,12 +8,12 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.w3c.dom.Text;
 
-import javax.swing.*;
-import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
-public class loginController {
+import static com.example.testfx.SwitchScene.scene;
+import static com.example.testfx.SwitchScene.stage;
+
+public class adminLoginController {
     @FXML
     private PasswordField password;
     @FXML
@@ -24,7 +24,10 @@ public class loginController {
     private Text error;
     @FXML
     protected void resetPassword() throws IOException {
-        SwitchScene.switchScene("resetpassword.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("resetpassword.fxml"));
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();;
     }
     @FXML
     private void signIn() throws IOException{
@@ -32,12 +35,18 @@ public class loginController {
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            SwitchScene.switchScene("MoviePage.fxml");
+            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("adminDashboard.fxml"));
+            scene = new Scene(fxmlLoader.load());
+            stage.setScene(scene);
+            stage.show();
         }
     }
 
     @FXML
-    protected void signUpButton() throws IOException{
-        SwitchScene.switchScene("Register.fxml");
+    protected void goToMain() throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("mainLogin.fxml"));
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 }

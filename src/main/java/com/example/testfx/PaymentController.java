@@ -6,16 +6,27 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
+import static com.example.testfx.SwitchScene.scene;
+import static com.example.testfx.SwitchScene.stage;
+
 public class PaymentController {
 
     @FXML
     protected void toMain() throws IOException {
-        SwitchScene.switchScene("MoviePage.fxml");
+        stage = stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("MoviePage.fxml"));
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
     protected void BackToStep3() throws IOException{
-        SwitchScene.switchScene("Step3.fxml");
+        stage = stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Step3.fxml"));
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

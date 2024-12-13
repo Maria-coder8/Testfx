@@ -44,7 +44,7 @@
         </AnchorPane>
         <AnchorPane layoutX="200.0" prefHeight="49.0" prefWidth="1138.0" style="-fx-background-color: #000;">
             <children>
-                <TextField layoutX="827.0" layoutY="12.0" onAction="#searchBar" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" />
+                <TextField layoutX="827.0" layoutY="12.0" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #444441; -fx-background-radius: 50;" />
             <ImageView fitHeight="34.0" fitWidth="26.0" layoutX="1043.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/notification.png" />

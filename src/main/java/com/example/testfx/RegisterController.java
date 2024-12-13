@@ -8,6 +8,10 @@ import javafx.scene.control.TextField;
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
+
+import static com.example.testfx.SwitchScene.scene;
+import static com.example.testfx.SwitchScene.stage;
+
 public class RegisterController {
     @FXML
     private TextField firstName;
@@ -26,15 +30,22 @@ public class RegisterController {
       boolean isInvalidEmail=ValideInformation.VallidateEmailField(email);
       boolean isInvalidPassword=ValideInformation.VallidatePasswordField(password);
       if (!isFirstEmpty &&!isLastEmpty&&!isEmailEmpty&&!isPasswordEmpty &&!isInvalidEmail && !isInvalidPassword) {
-          SwitchScene.switchScene("Step2.fxml");
+          stage = stage;
+          FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Step2.fxml"));
+          scene = new Scene(fxmlLoader.load());
+          stage.setScene(scene);
+          stage.show();
       }
 
 
     }
     @FXML
     protected void Back() throws IOException{
-    SwitchScene.switchScene("login.fxml");
-
+        stage = stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("userLogin.fxml"));
+        scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 
 }
