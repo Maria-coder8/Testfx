@@ -1,5 +1,6 @@
-package com.example.testfx;
+package application;
 
+import com.example.testfx.SwitchScene;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,7 +15,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("mainLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

@@ -65,7 +65,7 @@
       </Label>
       <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="8.0" layoutY="6.0">
          <image>
-            <Image url="@images/logo.watchit.png" />
+            <Image url="@../images/logo.watchit.png" />
          </image>
       </ImageView>
       <Button alignment="TOP_RIGHT" layoutX="1156.0" layoutY="9.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #27231e; -fx-text-fill: #FFFFFF; -fx-font-family: arial; -fx-font-weight: bold; -fx-background-radius: 20; -fx-font-size: 18px;" text="Back">
@@ -75,7 +75,7 @@
       </Button>
       <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="1175.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/previous.png" />
+            <Image url="@../images/previous.png" />
          </image>
       </ImageView>
    </children>

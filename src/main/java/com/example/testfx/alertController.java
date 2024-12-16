@@ -26,7 +26,7 @@ public class alertController {
         button.setLayoutY(100);
         button.setLayoutX(170);
         button.setOnAction(event -> {
-            FXMLLoader fxmlLoader=new FXMLLoader(alertController.class.getResource("Register.fxml"));
+            FXMLLoader fxmlLoader=new FXMLLoader(alertController.class.getResource("fxmlFiles/Register.fxml"));
             try {
 //                Scene newscene=new Scene(fxmlLoader.load());
 //                Main.stage.setScene(newscene);

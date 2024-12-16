@@ -13,7 +13,7 @@ public class adminDashboardController {
     @FXML
     protected void goToSignOut() throws IOException {
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("mainLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

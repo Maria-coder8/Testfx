@@ -14,7 +14,7 @@
          <children>
             <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="7.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/logo.watchit.png" />
+                  <Image url="@../images/logo.watchit.png" />
                </image>
             </ImageView>
          </children></AnchorPane>
@@ -52,7 +52,7 @@
       </TextField>
       <ImageView fitHeight="412.0" fitWidth="365.0" layoutX="796.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/adminDashboard.png" />
+            <Image url="@../images/adminDashboard.png" />
          </image>
       </ImageView>
       <Button alignment="TOP_RIGHT" layoutX="1138.0" layoutY="8.0" mnemonicParsing="false" onAction="#goToSignOut" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #27231e; -fx-text-fill: #FFFFFF; -fx-font-family: arial; -fx-font-weight: bold; -fx-background-radius: 20; -fx-font-size: 18px;" text="Sign Out">
@@ -62,7 +62,7 @@
       </Button>
       <ImageView fitHeight="26.0" fitWidth="22.0" layoutX="1153.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/previous.png" />
+            <Image url="@../images/previous.png" />
          </image>
       </ImageView>
    </children>

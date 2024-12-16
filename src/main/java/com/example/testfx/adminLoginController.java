@@ -24,7 +24,7 @@ public class adminLoginController {
     private Text error;
     @FXML
     protected void resetPassword() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("resetpassword.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/resetpassword.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();;
@@ -35,7 +35,7 @@ public class adminLoginController {
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("adminDashboard.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/adminDashboard.fxml"));
             scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
@@ -44,7 +44,7 @@ public class adminLoginController {
 
     @FXML
     protected void goToMain() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("mainLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

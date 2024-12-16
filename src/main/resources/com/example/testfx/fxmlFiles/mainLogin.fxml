@@ -23,7 +23,7 @@
       </Label>
       <ImageView fitHeight="35.0" fitWidth="200.0" layoutX="6.0" layoutY="7.0">
          <image>
-            <Image url="@images/logo.watchit.png" />
+            <Image url="@../images/logo.watchit.png" />
          </image>
       </ImageView>
       <HBox layoutX="316.0" layoutY="271.0" prefHeight="194.0" prefWidth="208.0" />
@@ -34,12 +34,12 @@
       </Label>
       <ImageView fitHeight="172.0" fitWidth="158.0" layoutX="791.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/userlogin.png" />
+            <Image url="@../images/userlogin.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="189.0" fitWidth="188.0" layoutX="397.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@images/admin.png" />
+            <Image url="@../images/admin.png" />
          </image>
       </ImageView>
       <Button layoutX="354.0" layoutY="508.0" mnemonicParsing="false" onAction="#goToAdmin" prefHeight="48.0" prefWidth="242.0" style="-fx-background-color: #27231e; -fx-font-family: arial; -fx-text-fill: FFFFFF; -fx-background-radius: 20; -fx-font-weight: bold; -fx-border-color: #dca523; -fx-border-radius: 20; -fx-border-width: 2; -fx-font-size: 18px;" text="Admin">

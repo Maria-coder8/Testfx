@@ -35,7 +35,7 @@ public class userLoginController {
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("MoviePage.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/MoviePage.fxml"));
             scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
@@ -44,7 +44,7 @@ public class userLoginController {
 
     @FXML
     protected void signUpButton() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Register.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
@@ -52,7 +52,7 @@ public class userLoginController {
 
     @FXML
     protected void goBack() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("mainLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

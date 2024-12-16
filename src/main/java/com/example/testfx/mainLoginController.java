@@ -16,7 +16,7 @@ public class mainLoginController {
     @FXML
     protected void goToAdmin() throws IOException {
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("adminLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/adminLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
@@ -25,22 +25,9 @@ public class mainLoginController {
     @FXML
     protected void goToUser() throws IOException {
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("userLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/userLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

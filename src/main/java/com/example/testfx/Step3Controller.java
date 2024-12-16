@@ -16,7 +16,7 @@ public class Step3Controller {
     @FXML
     protected void Done() throws IOException {
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Payment.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Payment.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
@@ -25,7 +25,7 @@ public class Step3Controller {
     @FXML
     protected void BacktoStep2() throws IOException {
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Step2.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Step2.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

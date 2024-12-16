@@ -9,12 +9,11 @@ import java.io.IOException;
 import static com.example.testfx.SwitchScene.scene;
 import static com.example.testfx.SwitchScene.stage;
 
-
 public class Step2Controller {
     @FXML
     protected void payment() throws IOException{
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Step3.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Step3.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
@@ -31,7 +30,7 @@ public class Step2Controller {
     @FXML
     protected void BacktoStep1() throws IOException{
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Register.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Register.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();

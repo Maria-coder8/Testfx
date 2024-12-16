@@ -31,7 +31,7 @@ public class RegisterController {
       boolean isInvalidPassword=ValideInformation.VallidatePasswordField(password);
       if (!isFirstEmpty &&!isLastEmpty&&!isEmailEmpty&&!isPasswordEmpty &&!isInvalidEmail && !isInvalidPassword) {
           stage = stage;
-          FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("Step2.fxml"));
+          FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Step2.fxml"));
           scene = new Scene(fxmlLoader.load());
           stage.setScene(scene);
           stage.show();
@@ -42,7 +42,7 @@ public class RegisterController {
     @FXML
     protected void Back() throws IOException{
         stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("userLogin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/userLogin.fxml"));
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
