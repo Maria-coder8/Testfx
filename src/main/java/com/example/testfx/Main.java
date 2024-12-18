@@ -1,6 +1,6 @@
-package application;
+package com.example.testfx;
 
-import com.example.testfx.SwitchScene;
+import eu.hansolo.tilesfx.addons.Switch;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,9 +14,9 @@ import static com.example.testfx.SwitchScene.stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-        stage = primaryStage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
+        stage=new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("fxmlFiles/MoviePage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
     }

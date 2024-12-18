@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
@@ -10,6 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #141414;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx.MovieDetailsController">
     <children>
@@ -50,32 +52,27 @@
                 <Font name="Arial Bold" size="36.0" />
             </font>
         </Label>
-        <Label layoutX="712.0" layoutY="135.0" text="1994" textFill="#999999">
+        <Label layoutX="695.0" layoutY="183.0" text="1994" textFill="#999999">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
         </Label>
-        <Label layoutX="520.0" layoutY="135.0" text="Frank Darabont" textFill="#999999">
+        <Label layoutX="520.0" layoutY="183.0" text="Frank Darabont" textFill="#999999">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
         </Label>
-        <Label layoutX="808.0" layoutY="135.0" text="English" textFill="#999999">
+        <Label layoutX="786.0" layoutY="183.0" text="English" textFill="#999999">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
         </Label>
-        <Label layoutX="928.0" layoutY="135.0" text="USA" textFill="#999999">
+        <Label layoutX="905.0" layoutY="183.0" text="USA" textFill="#999999">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
         </Label>
-        <Label layoutX="520.0" layoutY="170.0" text="Tim Robbins, Morgan Freeman" textFill="#999999">
-            <font>
-                <Font name="Arial" size="21.0" />
-            </font>
-        </Label>
-        <Label layoutX="1024.0" layoutY="135.0" text="Drama" textFill="#999999">
+        <Label layoutX="1001.0" layoutY="183.0" text="Drama" textFill="#999999">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
@@ -85,7 +82,7 @@
                 <Font name="Arial" size="21.0" />
             </font>
         </Label>
-        <Label layoutX="881.0" layoutY="170.0" text="25000000" textFill="#999999">
+        <Label layoutX="861.0" layoutY="218.0" text="\$25 million" textFill="#999999">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
@@ -95,7 +92,7 @@
                 <Font name="Arial" size="21.0" />
             </font>
         </Label>
-        <Text fill="#999999" layoutX="514.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner." wrappingWidth="611.1648559570312">
+        <Text fill="#999999" layoutX="514.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner." wrappingWidth="611.1648559570312">
             <font>
                 <Font name="Arial" size="21.0" />
             </font>
@@ -134,5 +131,26 @@
       <Button layoutX="259.0" layoutY="440.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="272.0" style="-fx-background-color: #DCA523; -fx-font-family: arial; -fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; -fx-background-radius: 50;" text="Watched" />
       <Button layoutX="965.0" layoutY="440.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="272.0" style="-fx-background-color: #DCA523; -fx-font-family: arial; -fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; -fx-background-radius: 50;" text="Add To Favourites" />
       <Button layoutX="612.0" layoutY="441.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="272.0" style="-fx-background-color: #DCA523; -fx-font-family: arial; -fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; -fx-background-radius: 50;" text="Add To My List" />
+      <Rating layoutX="521.0" layoutY="130.0" />
+      <Label layoutX="1115.0" layoutY="184.0" prefHeight="26.0" prefWidth="70.0" text="2h 22m" textFill="#999999">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1013.0" layoutY="218.0" prefHeight="26.0" prefWidth="118.0" text="\$73.3 million" textFill="#999999">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="511.0" layoutY="211.0" onAction="#goToActor" prefHeight="41.0" prefWidth="143.0" text="Tim Robbins" textFill="#999999">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="646.0" layoutY="209.0" onAction="#goToActor" prefHeight="42.0" prefWidth="185.0" text="Morgan Freeman" textFill="#999999">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Hyperlink>
     </children>
 </AnchorPane>

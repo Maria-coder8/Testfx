@@ -1,5 +1,5 @@
 //package application;
-//import model.Movie;
+//import com.example.testfx.Movie;
 //
 //import java.util.List;
 //

@@ -10,9 +10,6 @@ import org.w3c.dom.Text;
 
 import java.io.IOException;
 
-import static com.example.testfx.SwitchScene.scene;
-import static com.example.testfx.SwitchScene.stage;
-
 public class userLoginController {
     @FXML
     private PasswordField password;
@@ -44,17 +41,17 @@ public class userLoginController {
 
     @FXML
     protected void signUpButton() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/Register.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(userLoginController.class.getResource("fxmlFiles/Register.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
     }
 
     @FXML
     protected void goBack() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(userLoginController.class.getResource("fxmlFiles/mainLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
     }
 }

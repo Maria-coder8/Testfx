@@ -9,9 +9,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
-import static com.example.testfx.SwitchScene.scene;
-import static com.example.testfx.SwitchScene.stage;
-
 public class Step3Controller {
     @FXML
     protected void Done() throws IOException {
