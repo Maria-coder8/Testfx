@@ -8,10 +8,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static com.example.testfx.SwitchScene.scene;
-import static com.example.testfx.SwitchScene.stage;
+
 
 public class Main extends Application {
+    public static Stage stage;
+
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage=new Stage();

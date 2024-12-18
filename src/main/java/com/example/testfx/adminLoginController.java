@@ -10,8 +10,6 @@ import org.w3c.dom.Text;
 
 import java.io.IOException;
 
-import static com.example.testfx.SwitchScene.scene;
-import static com.example.testfx.SwitchScene.stage;
 
 public class adminLoginController {
     @FXML
@@ -23,30 +21,22 @@ public class adminLoginController {
     @FXML
     private Text error;
     @FXML
-    protected void resetPassword() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/resetpassword.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();;
-    }
-    @FXML
     private void signIn() throws IOException{
-
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/adminDashboard.fxml"));
-            scene = new Scene(fxmlLoader.load());
-            stage.setScene(scene);
-            stage.show();
+            FXMLLoader fxmlLoader = new FXMLLoader(adminDashboardController.class.getResource("fxmlFiles/adminDashboard.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Main.stage.setScene(scene);
+            Main.stage.show();
         }
     }
 
     @FXML
     protected void goToMain() throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(adminDashboardController.class.getResource("fxmlFiles/mainLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
     }
 }

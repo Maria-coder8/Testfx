@@ -9,25 +9,21 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
-import static com.example.testfx.SwitchScene.scene;
-import static com.example.testfx.SwitchScene.stage;
 
 public class mainLoginController {
     @FXML
     protected void goToAdmin() throws IOException {
-        stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/adminLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(mainLoginController.class.getResource("fxmlFiles/adminLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
     }
 
     @FXML
     protected void goToUser() throws IOException {
-        stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/userLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(mainLoginController.class.getResource("fxmlFiles/userLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
     }
 }

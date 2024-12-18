@@ -6,16 +6,13 @@ import javafx.scene.Scene;
 
 import java.io.IOException;
 
-import static com.example.testfx.SwitchScene.scene;
-import static com.example.testfx.SwitchScene.stage;
 
 public class adminDashboardController {
     @FXML
     protected void goToSignOut() throws IOException {
-        stage = stage;
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/mainLogin.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(adminDashboardController.class.getResource("fxmlFiles/mainLogin.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();
     }
 }

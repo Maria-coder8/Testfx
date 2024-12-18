@@ -21,10 +21,10 @@ public class userLoginController {
     private Text error;
     @FXML
     protected void resetPassword() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("resetpassword.fxml"));
-        scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();;
+        FXMLLoader fxmlLoader = new FXMLLoader(userLoginController.class.getResource("resetpassword.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Main.stage.setScene(scene);
+        Main.stage.show();;
     }
     @FXML
     private void signIn() throws IOException{
@@ -32,10 +32,10 @@ public class userLoginController {
         boolean isEmailEmpty=ValideInformation.validateEmptyField(emailOrMobileNumber);
         boolean isPasswordEmpty=ValideInformation.validateEmptyField(password);
         if(!isEmailEmpty && !isPasswordEmpty){
-            FXMLLoader fxmlLoader = new FXMLLoader(SwitchScene.class.getResource("fxmlFiles/MoviePage.fxml"));
-            scene = new Scene(fxmlLoader.load());
-            stage.setScene(scene);
-            stage.show();
+            FXMLLoader fxmlLoader = new FXMLLoader(userLoginController.class.getResource("fxmlFiles/MoviePage.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Main.stage.setScene(scene);
+            Main.stage.show();
         }
     }
 
